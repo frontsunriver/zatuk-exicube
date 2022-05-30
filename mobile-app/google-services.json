@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "606194185125",
+    "firebase_url": "https://tuktuk-11aad-default-rtdb.firebaseio.com",
+    "project_id": "tuktuk-11aad",
+    "storage_bucket": "tuktuk-11aad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606194185125:android:5c7087aa58c61ee8d46e4c",
+        "android_client_info": {
+          "package_name": "com.zatuk.taxi.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606194185125-vckrbopolosals2hqdg41vsi6bqv3g2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5xHsZspUhrVrW2woYwfG4pCVgp27qq1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606194185125-vckrbopolosals2hqdg41vsi6bqv3g2j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606194185125-h38sghfbim3ip8g0jh67sh6fbc49ncrv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tuk.tuk.company.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native/Libraries/Utilities/warnOnce.js b/node_modules/react-native/Libraries/Utilities/warnOnce.js
+index 244cfbe..42e5898 100644
+--- a/node_modules/react-native/Libraries/Utilities/warnOnce.js
++++ b/node_modules/react-native/Libraries/Utilities/warnOnce.js
+@@ -24,7 +24,7 @@ function warnOnce(key: string, message: string) {
+     return;
+   }
+ 
+-  console.warn(message);
++  //console.warn(message);
+ 
+   warnedKeys[key] = true;
+ }

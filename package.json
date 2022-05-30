@@ -1,0 +1,33 @@
+{
+  "name": "exicubeapps",
+  "version": "1.9.2",
+  "description": "Exicube App Solutions",
+  "scripts": {
+    "app": "yarn workspace mobile-app start",
+    "app:update": "yarn workspace mobile-app update",
+    "app:publish": "cd mobile-app && expo publish",
+    "app:build-ios": "cd mobile-app && expo build:ios",
+    "app:build-android": "cd mobile-app && expo build:android",
+    "app:push": "cd mobile-app && expo push:android:upload  --api-key",
+    "web": "yarn workspace web-app start",
+    "deploy": "yarn workspace web-app build && firebase deploy",
+    "common": "yarn workspace common build && yarn workspace web-app add common@1.0.0 --force && yarn workspace mobile-app add common@1.0.0 --force && patch-package",
+    "postinstall": "patch-package && concurrently --kill-others-on-fail \"cd mobile-app && expo-yarn-workspaces postinstall\" \"exicube install\""
+  },
+  "workspaces": [
+    "mobile-app",
+    "web-app",
+    "functions",
+    "common"
+  ],
+  "author": "Exicube App Solutions (OPC) Private Limited",
+  "private": true,
+  "dependencies": {
+    "concurrently": "7.0.0",
+    "exicube-cli": "1.0.6",
+    "firebase-tools": "10.7.1",
+    "fs-extra": "10.0.0",
+    "node-fetch": "2.6.7",
+    "patch-package": "6.4.7"
+  }
+}

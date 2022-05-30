@@ -1,0 +1,13 @@
+diff --git a/node_modules/moment/min/moment-with-locales.js b/node_modules/moment/min/moment-with-locales.js
+index 4e0b8d9..6fe0813 100644
+--- a/node_modules/moment/min/moment-with-locales.js
++++ b/node_modules/moment/min/moment-with-locales.js
+@@ -2083,7 +2083,7 @@
+             try {
+                 oldLocale = globalLocale._abbr;
+                 aliasedRequire = require;
+-                aliasedRequire('./locale/' + name);
++                aliasedRequire('../locale/' + name);
+                 getSetGlobalLocale(oldLocale);
+             } catch (e) {
+                 // mark as not found to avoid repeating expensive file require call causing high CPU

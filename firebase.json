@@ -1,0 +1,87 @@
+{
+  "database": {
+    "rules": "database-rules.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "hosting": {
+    "public": "web-app/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/dashboard", "destination": "/index.html" },
+      { "source": "/bookings", "destination": "/index.html" },
+      { "source": "/addbookings", "destination": "/index.html" },
+      { "source": "/profile", "destination": "/index.html" },
+      { "source": "/cartypes", "destination": "/index.html" },
+      { "source": "/cancelreasons", "destination": "/index.html" },
+      { "source": "/promos", "destination": "/index.html" },
+      { "source": "/riders", "destination": "/index.html" },
+      { "source": "/drivers", "destination": "/index.html" },
+      { "source": "/fleetadmins", "destination": "/index.html" },
+      { "source": "/alladmin", "destination": "/index.html" },
+      { "source": "/driverearning", "destination": "/index.html" },
+      { "source": "/notifications", "destination": "/index.html" },
+      { "source": "/earningreports", "destination": "/index.html" },
+      { "source": "/addtowallet", "destination": "/index.html" },
+      { "source": "/withdraws", "destination": "/index.html" },
+      { "source": "/settings", "destination": "/index.html" },
+      { "source": "/appinfo", "destination": "/index.html" },
+      { "source": "/languagesetting", "destination": "/index.html" },
+      { "source": "/about-us", "destination": "/index.html" },
+      { "source": "/privacy-policy", "destination": "/index.html" },
+      { "source": "/login", "destination": "/index.html" },
+      { "source": "/getHtml", "function": "getHtml"},
+      { "source": "/setup", "function": "setup" },
+      { "source": "/get_providers", "function": "get_providers"},
+      { "source": "/get_languages", "function": "get_languages" },
+      { "source": "/send_notification", "function": "send_notification"},
+      { "source": "/check_user_exists", "function": "check_user_exists" },
+      { "source": "/validate_referrer", "function": "validate_referrer"},
+      { "source": "/user_signup", "function": "user_signup" },
+      { "source": "/success", "function": "success"},
+      { "source": "/cancel", "function": "cancel" },
+      { "source": "/braintree-link", "function": "braintree-link" },
+      { "source": "/braintree-process", "function": "braintree-process"},
+      { "source": "/culqi-link", "function": "culqi-link" },
+      { "source": "/culqi-process", "function": "culqi-process"},
+      { "source": "/flutterwave-link", "function": "flutterwave-link" },
+      { "source": "/flutterwave-process", "function": "flutterwave-process"},
+      { "source": "/liqpay-link", "function": "liqpay-link" },
+      { "source": "/liqpay-process", "function": "liqpay-process"},
+      { "source": "/payfast-link", "function": "payfast-link" },
+      { "source": "/payfast-process", "function": "payfast-process"},
+      { "source": "/paypal-link", "function": "paypal-link" },
+      { "source": "/paypal-process", "function": "paypal-process"},
+      { "source": "/paystack-link", "function": "paystack-link" },
+      { "source": "/paystack-process", "function": "paystack-process"},
+      { "source": "/paytm-link", "function": "paytm-link" },
+      { "source": "/paytm-process", "function": "paytm-process"},
+      { "source": "/payulatam-link", "function": "payulatam-link" },
+      { "source": "/payulatam-process", "function": "payulatam-process"},
+      { "source": "/securepay-link", "function": "securepay-link" },
+      { "source": "/securepay-process", "function": "securepay-process"},
+      { "source": "/stripe-link", "function": "stripe-link" },
+      { "source": "/stripe-process", "function": "stripe-process"},
+      { "source": "/mercadopago-link", "function": "mercadopago-link" },
+      { "source": "/mercadopago-process", "function": "mercadopago-process"},
+      { "source": "/googleapis-autocomplete", "function": "googleapis-autocomplete"},
+      { "source": "/googleapis-getcoords", "function": "googleapis-getcoords"},
+      { "source": "/googleapis-getaddress", "function": "googleapis-getaddress"},
+      { "source": "/googleapis-getdistancematrix", "function": "googleapis-getdistancematrix"},
+      { "source": "/googleapis-getdirections", "function": "googleapis-getdirections"},
+      { "source": "/test-link", "function": "test-link" },
+      { "source": "/test-process", "function": "test-process"}
+    ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
+    ]
+  }
+}
