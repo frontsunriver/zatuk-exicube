@@ -32,10 +32,10 @@
               "client_type": 3
             },
             {
-              "client_id": "606194185125-h38sghfbim3ip8g0jh67sh6fbc49ncrv.apps.googleusercontent.com",
+              "client_id": "606194185125-2hc7ck97lecls60gcr9d7ctkpi953ifh.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.tuk.tuk.company.app"
+                "bundle_id": "com.zatuk.taxi.com"
               }
             }
           ]
